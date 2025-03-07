@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="10_css.css">
     <title>١٠ اشياء عني</title>
 </head>
-<body>
+<body>    
     <div class="background-container">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
         <div class="stars"></div>
@@ -84,28 +84,35 @@
         </div>
     </span>
     <span style="position: absolute; margin: 5% 10%;">
-        <div class="star-2" onmouseover="showPopup('popup3')" onmouseout="hidePopup('popup3')"></div>
+        <div class="star-2"
+             onmouseover="showPopup('popup3')"
+             onmouseout="hidePopup('popup3')"
+             onclick="window.location.href='../';">
+        </div>
         <div class="popup" id="popup3">
-            <h1>my name is ali</h1>
-            <h3>here is me talking</h3>
+          <h1>my name is ali</h1>
+          <h3>here is me talking</h3>
           <ul>
-           <li>me:star is good</li>
+            <li>me: star is good</li>
           </ul>
           <ol>
-           <li>someone:star is bad</li>
+            <li>someone: star is bad</li>
           </ol>
           <ul>
-            <li>me:fuck you someone</li>
+            <li>me: fuck you someone</li>
           </ul>
           <ol>
-            <li>someone:aghh</li>
-           </ol>
-           <ul>
-            <li>me:aghh</li>
+            <li>someone: aghh</li>
+          </ol>
+          <ul>
+            <li>me: aghh</li>
             <h3>then i killed him and throw his body in the nile</h3>
           </ul>
+          <a href="../" class="back-link">
+            <span class="arrow">&larr;</span> اظغط النجمه للروجع
+          </a>
         </div>
-    </span>
+      </span>
     
 <script src="10_js.js"></script>
 </body>

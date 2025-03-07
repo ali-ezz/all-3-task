@@ -9,7 +9,23 @@ body {
         opacity: 0.4;
     }
 }
-
+.arrow {
+    margin-right: 0.5rem;
+    font-size: 1.2rem; 
+  }
+    .back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #b0b0b0;
+    margin: 1rem;
+  }
+  
+  .back-link:hover {
+    color: #616162;
+  }
 .star-1 {
     display: inline-block;
     position: relative;

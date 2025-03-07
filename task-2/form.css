@@ -9,8 +9,8 @@ body {
 /* Form container with a softened blue background */
 .form-box {
     max-width: 400px;
-    margin: 1.5rem auto;
-    padding: 1rem;
+    margin: 0.3rem auto;
+    padding: .4rem;
     background-color: #eff8ff; /* Light pastel blue */
     opacity: 0.95;
     border-radius: 8px;
@@ -86,3 +86,22 @@ body {
   .button-group input[type="reset"]:hover {
     background-color: #0056b3;
   }
+  /* Arrow styling */
+.arrow {
+  margin-right: 0.5rem;
+  font-size: 1.2rem; /* Slightly bigger arrow */
+}
+
+/* Back-link styling */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.back-link:hover {
+  color: #0056b3;
+}
