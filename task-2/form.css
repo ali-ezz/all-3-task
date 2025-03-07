@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5; 
+    background-image: url(monster.png);
+    background-size: cover;
+  }
+  
+/* Form container with a softened blue background */
+.form-box {
+    max-width: 400px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: #eff8ff; /* Light pastel blue */
+    opacity: 0.95;
+    border-radius: 8px;
+    border: 2px solid #66a3ff; /* Subtle border to match the button color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading in dark blue */
+  .form-heading {
+    margin: 0 0 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #003366;
+  }
+  
+  /* Generic Form Groups */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #003366;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="date"],
+  .form-group input[type="number"],
+  .form-group input[type="file"] {
+    padding: 0.5rem;
+    border: 1px solid #b3d1ff;
+    border-radius: 4px;
+  }
+  
+  /* Radio and Checkbox layouts */
+  .radio-options {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Button group styling */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  /* Submit & Reset buttons in a nice blue color */
+  .button-group input[type="submit"],
+  .button-group input[type="reset"] {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Hover effect for buttons */
+  .button-group input[type="submit"]:hover,
+  .button-group input[type="reset"]:hover {
+    background-color: #0056b3;
+  }

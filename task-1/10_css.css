@@ -1,0 +1,230 @@
+body {
+    background-color: black;
+}
+@keyframes blink-animation {
+    from {
+        opacity: 0.8;
+    }
+    to { 
+        opacity: 0.4;
+    }
+}
+
+.star-1 {
+    display: inline-block;
+    position: relative;
+    color: rgb(129, 128, 128);
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent; 
+    border-bottom: 10px solid rgb(129, 128, 128);     
+    border-left: 15px solid transparent;  
+    transform: rotate(35deg);
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    animation: blink-animation 2s infinite alternate;
+}
+
+.star-1:before {
+    border-bottom: 10px solid rgb(129, 128, 128);     
+    border-left: 5px solid transparent;   
+    border-right: 5px solid transparent;  
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -7px;                           
+    left: -10px;                         
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+.star-1:after {
+    position: absolute;
+    display: block;
+    color: rgb(129, 128, 128);                       
+    top: 0px;
+    left: -15px;                         
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent; 
+    border-bottom: 10px solid rgb(129, 128, 128);     
+    border-left: 15px solid transparent;  
+    transform: rotate(-70deg);
+    content: '';
+}
+.star-1:hover {
+    transform: rotate(90deg);
+}
+
+.star-2 {
+    display: inline-block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent; 
+    border-bottom: 10px solid rgb(255, 255, 255);     
+    border-left: 15px solid transparent;  
+    transform: rotate(35deg);
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    animation: blink-animation 2s infinite alternate;
+}
+.star-2:before {
+    border-bottom: 10px solid rgb(255, 255, 255);     
+    border-left: 5px solid transparent;   
+    border-right: 5px solid transparent;  
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -7px;                           
+    left: -10px;                         
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+.star-2:after {
+    position: absolute;
+    display: block;
+    color: rgb(255, 255, 255);                       
+    top: 0px;
+    left: -15px;                         
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent; 
+    border-bottom: 10px solid rgb(255, 255, 255);     
+    border-left: 15px solid transparent;  
+    transform: rotate(-70deg);
+    content: '';
+}
+.star-2:hover {
+    transform: rotate(90deg);
+}
+.popup { 
+    display: none;
+    position: absolute; 
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-10%); 
+    padding: 10px; 
+    background-color: rgb(129, 128, 128); 
+    border: 1px solid #000000; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+    opacity: 80%;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+@keyframes blink-animation {
+    from {
+          opacity: 80%;
+      }
+      to { 
+         opacity: 40%;
+      }
+  }
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      
+      -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;
+      
+  }
+  
+  .clouds{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+  
+     -moz-animation:move-background 150s linear infinite;
+    -ms-animation:move-background 150s linear infinite;
+    -o-animation:move-background 150s linear infinite;
+    -webkit-animation:move-background 150s linear infinite;
+    animation:move-background 150s linear infinite;
+  }
+  img{
+    height: 70vh;
+    width:70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}  
