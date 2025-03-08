@@ -64,7 +64,7 @@ body {
 .word {
   margin: 20px auto;
   font-size: 1.5rem;
-  color: #333;
+  color: #000000;
   background-color: rgba(204, 204, 204, 0.9);
   width: 400px;
   border-radius: 10px;
