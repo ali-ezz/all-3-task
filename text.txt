@@ -1,0 +1,8 @@
+• Age Calculator
+User enters their birth year, and it shows their age using JS math and conditionals.
+• Simple Quiz App
+A basic quiz with multiple-choice questions. Show the score at the end using conditions and loops.
+• To-Do List Manager
+Let users add, mark as done, and delete tasks. Practice functions and conditionals.
+• Number Guessing Game
+User tries to guess a random number. Give hints like "Too high" or "Too low" using conditions and loops.

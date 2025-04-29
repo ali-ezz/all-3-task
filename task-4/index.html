@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4: JS Mini Apps!</title>
+    <link rel="stylesheet" href="task-4.css">
+</head>
+<body>
+    <h1>Task 4: Cool Mini-Apps</h1>
+    <p style="text-align:center; color: #666;">Practice JS: Conditions, loops, functions, user input and fun!</p>
+    <div class="mini-apps">
+        <!-- Age Calculator -->
+        <section class="mini-app" id="age-calculator">
+            <h2>Age Calculator</h2>
+            <input type="number" id="birth-year" placeholder="Enter your birth year">
+            <button onclick="calculateAge()">Calculate Age</button>
+            <div class="mini-result" id="age-result"></div>
+        </section>
+        <!-- Quiz App -->
+        <section class="mini-app" id="quiz-app">
+            <h2>Simple Quiz</h2>
+            <div id="quiz-question"></div>
+            <div id="quiz-choices"></div>
+            <button id="next-question" onclick="nextQuizQuestion()" style="display:none;">Next</button>
+            <div class="mini-result" id="quiz-result"></div>
+        </section>
+        <!-- To-Do List -->
+        <section class="mini-app" id="todo-list">
+            <h2>To-Do List Manager</h2>
+            <input type="text" id="todo-input" placeholder="Add your task...">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="tasks"></ul>
+        </section>
+        <!-- Number Guessing Game -->
+        <section class="mini-app" id="number-guess">
+            <h2>Number Guessing Game</h2>
+            <button onclick="startGuessingGame()" id="start-guessing">Start New Game</button>
+            <div id="guess-area" style="display:none;">
+                <input type="number" id="guess-input" placeholder="Enter your guess">
+                <button onclick="submitGuess()">Guess</button>
+                <div class="mini-result" id="guess-result"></div>
+            </div>
+        </section>
+    </div>
+    <div style="text-align:center; margin-top:2em;">
+        <a href="../" class="back-link">
+            <span class="arrow">&larr;</span> ارجع للخلف
+        </a>
+    </div>
+    <script src="task-4.js"></script>
+</body>
+</html>
